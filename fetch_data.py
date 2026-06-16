@@ -4,7 +4,7 @@ import os
 import time
 import json
 
-# ── Wikipedia ──────────────────────────────────────────────────────────────
+# ── Wikipedia ───
 wiki = wikipediaapi.Wikipedia(
     user_agent="f1-rag-project/1.0",
     language="en"
@@ -51,7 +51,7 @@ WIKI_ARTICLES = [
     "Formula One World Constructors Championship",
 ]
 
-# ── F1 Fandom wiki ─────────────────────────────────────────────────────────
+# ── F1 Fandom wiki ───
 # A separate community wiki with different editorial coverage from Wikipedia.
 # Uses the standard MediaWiki API.
 FANDOM_API = "https://f1.fandom.com/api.php"
@@ -111,7 +111,7 @@ def fetch_fandom_article(title: str) -> str | None:
 
 os.makedirs("data", exist_ok=True)
 
-# ── Fetch Wikipedia ────────────────────────────────────────────────────────
+# ── Fetch Wikipedia ───
 print("=== Fetching Wikipedia articles ===")
 wiki_saved = 0
 for title in WIKI_ARTICLES:
@@ -127,7 +127,7 @@ for title in WIKI_ARTICLES:
     wiki_saved += 1
     time.sleep(0.5)
 
-# ── Fetch Fandom ───────────────────────────────────────────────────────────
+# ── Fetch Fandom ───
 print("\n=== Fetching F1 Fandom wiki articles ===")
 fandom_saved = 0
 for title in FANDOM_ARTICLES:
@@ -145,7 +145,7 @@ for title in FANDOM_ARTICLES:
 total = len(os.listdir("data"))
 print(f"\ndone — {wiki_saved} Wikipedia + {fandom_saved} Fandom = {total} files in data/")
 
-# ── Write a source manifest ────────────────────────────────────────────────
+# ── Write a source manifest ───
 manifest = {
     "sources": {
         "wikipedia": {

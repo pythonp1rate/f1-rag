@@ -3,6 +3,7 @@ chromadb
 rank-bm25
 streamlit
 wikipedia-api
+requests
 matplotlib
 pandas
 ipykernel

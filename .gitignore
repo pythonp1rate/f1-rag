@@ -7,3 +7,4 @@ data/
 *.png
 analysis.md*.png
 analysis.md
+.vscode/settings.json
