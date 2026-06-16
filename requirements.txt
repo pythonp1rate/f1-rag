@@ -1,0 +1,8 @@
+ollama
+chromadb
+rank-bm25
+streamlit
+wikipedia-api
+matplotlib
+pandas
+ipykernel

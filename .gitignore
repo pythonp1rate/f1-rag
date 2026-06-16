@@ -1,0 +1,9 @@
+venv/
+.chroma/
+chunks_store.json
+__pycache__/
+*.pyc
+data/
+*.png
+analysis.md*.png
+analysis.md
