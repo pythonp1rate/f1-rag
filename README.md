@@ -1,5 +1,7 @@
 # F1 Hybrid RAG
 
+> Final assignment for the course **Machine Learning, Theory and Practical Application**.
+
 A fully local RAG system that answers Formula 1 questions using a corpus of Wikipedia and F1 Fandom wiki articles. No API keys, no cloud, runs entirely on your machine with Ollama.
 
 ## Stack
